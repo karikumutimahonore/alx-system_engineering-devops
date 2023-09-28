@@ -1,2 +1,5 @@
 #!/bin/bash
-chown vincent:staff /*
+
+for file in *; do
+chown vincent:staff $file
+done
