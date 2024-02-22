@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
-# A script that displays Best School 10 times and hi after the 9th using while and if
+# This script prints "Best School" 10 times using the `while` loop but for the
+# 9th iteration, displays "Best School" and then "Hi" on a new line
 
-number_count=1
+i=0
 
-while [ $number_count -le 10 ]
-do
-    echo "Best School"
-    if [ $number_count -eq 9 ]
-    then
-        echo "Hi"
-    fi
-    ((number_count++))
+while ((i  < 10)); do
+	((i++))
+	
+	echo "Best School"
+
+	if [ $i -eq 9 ]; then
+		echo "Hi"
+	fi
+
 done

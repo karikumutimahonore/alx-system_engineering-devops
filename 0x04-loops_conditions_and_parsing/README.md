@@ -1,1 +1,1 @@
-Loops, conditions and parsing project.
+Shell Scripting - Loops, Conditions and Parsing.

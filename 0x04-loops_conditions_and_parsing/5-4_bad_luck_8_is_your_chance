@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
-# A script that loops through 1 to 10 using while
+# This loops from 1 to 10 using the `while` loop and displays
+	# "bad luck" on the 4th iteration
+	# "good luck" on the 8th iteration
+	# "Best School" for all other iterations
 
-number_count=1
+i=1
 
-while [ $number_count -le 10 ]
-do
-    if [ $number_count -eq 4 ]
-    then
-        echo "bad luck"
-    elif [ $number_count -eq 8 ]
-    then
-        echo "good luck"
-    else
-        echo "Best School"
-    fi
-    ((number_count++))
+while ((i  <= 10)); do
+	if [ $i -eq 4 ]; then
+		echo "bad luck"
+	elif [ $i -eq 8 ]; then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+
+	((i++))
 done
